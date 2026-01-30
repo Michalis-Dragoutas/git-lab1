@@ -1,6 +1,6 @@
-duck
+Duck
 
-mammoth
+Mammoth
 
-cat
+Cat
 
