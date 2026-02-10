@@ -1,1 +1,62 @@
 fix2
+
+git init -b main
+
+git add README.md
+git commit -m "Initial commit"
+
+git checkout -b feature1
+notepad README.md
+git add README.md
+git commit -m "Add dog"
+
+git checkout main
+notepad README.md
+git add README.md
+git commit -m "Change moose to mammoth"
+
+git merge feature1
+git add README.md
+git commit
+
+git tag extinct
+
+git reset --hard HEAD~1
+
+git branch feature2
+notepad README.md
+git add README.md
+git commit -m
+
+git checkout feature2
+git add fix1.txt
+git commit -m "Added fix1 file"
+
+
+git add fix2.txt
+git commit -m "Add fix2 file"
+
+git checkout main
+git cherry-pick <4855334>
+
+git checkout -b cleanup_test
+git commit -m "Add bird"
+git add README.md
+git commit -m "Add fish"
+git add README.md
+git commit -m "Add snake"
+
+git rebase -i HEAD~3
+
+git add README.md
+git commit -m "Addid turtle"
+git commit --amend -m "Added turtle"
+
+git add .gitignore
+git commit -m "Add .gitignore rules"
+
+git add fix2.txt
+git commit -m " Git commands"
+
+git push --all
+git push --tags
